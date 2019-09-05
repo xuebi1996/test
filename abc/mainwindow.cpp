@@ -9,6 +9,9 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->openFileButton,SIGNAL(clicked()),this,SLOT(getFileInfoSlot()));
     ui->openFileButton->setIcon(QIcon(":/new/prefix1/Resources/operatmenu/fangda.png"));
 
+  qDebug()<<"ddddddddddddddddddddd";
+  qDebug()<<"ddddddddddddddddddddd";
+  qDebug()<<"ddddddddddddddddddddd";
 }
 
 MainWindow::~MainWindow()

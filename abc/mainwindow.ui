@@ -34,7 +34,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>鏁版嵁涓暟</string>
+     <string>数据个数</string>
     </property>
    </widget>
    <widget class="QPushButton" name="openFileButton">
