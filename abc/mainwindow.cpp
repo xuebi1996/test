@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QObject::connect(ui->openFileButton,SIGNAL(clicked()),this,SLOT(getFileInfoSlot()));
+    ui->openFileButton->setIcon(QIcon(":/new/prefix1/Resources/operatmenu/fangda.png"));
 
 }
 
@@ -19,6 +20,7 @@ void MainWindow::getFileInfoSlot()
    //先获得文件的名称
  {  QString fileName=QFileDialog::getOpenFileName(this,"打开文件",QDir::currentPath());
    // qDebug()<<"fileName is"<<fileName;
+    qDebug()<<"hhhhhhhhhhh";
     if(fileName.isEmpty())
     {
         QMessageBox::information(this,"Error Message","Please select a textfile");

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/"/>
+    <qresource prefix="/new/prefix1">
+        <file>Resources/operatmenu/fangda.png</file>
+        <file>Resources/operatmenu/huaxian.png</file>
+        <file>Resources/operatmenu/suoxiao.png</file>
+    </qresource>
+</RCC>
